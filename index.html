@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alla Mohammed Algetaa — Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS for animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Swiper (carousel inside modal) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Alla Algetaa</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="https://www.credly.com/users/alla-algettaa/badges#credly" class="nav-link" target="_blank" rel="noopener">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <header id="home" class="hero">
+    <div class="container hero-inner" data-aos="fade-up">
+      <img src="assets/img/avatar1.png" alt="Alla Avatar" class="avatar">
+      <h1>Hi, I'm <span>Alla Mohammed Algetaa</span></h1>
+      <p>Software Engineering • Full Stack Developer • UX/UI Designer</p>
+
+      <div class="hero-links">
+      
+        <a href="https://www.linkedin.com/in/alla-algettaa-3a4151280/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.credly.com/users/alla-algettaa/badges#credly" target="_blank" rel="noopener" aria-label="Certifications">
+          <i class="fa-solid fa-certificate"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= ABOUT ======= -->
+  <section id="about" class="section about">
+    <div class="container" data-aos="fade-right">
+      <h2>About Me</h2>
+    <p>
+  I am a dedicated Software Engineering graduate with a passion for building functional and user-friendly applications.<br>
+  I have experience in full-stack development using Java, JavaScript, Angular, Node.js, and Spring Boot.<br>
+  I enjoy designing intuitive interfaces and improving user experiences.<br>
+  I am eager to continue learning, growing my skills, and contributing to meaningful projects.
+</p>
+
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section id="skills" class="section skills">
+    <div class="container" data-aos="fade-left">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="assets/icons/java.png" alt="Java" class="skill-icon"> Java</div>
+        <div class="skill"><img src="assets/icons/javascript.png" alt="JavaScript" class="skill-icon"> JavaScript</div>
+        <div class="skill"><img src="assets/icons/html.png" alt="HTML" class="skill-icon"> HTML</div>
+        <div class="skill"><img src="assets/icons/css.png" alt="CSS" class="skill-icon"> CSS</div>
+        <div class="skill"><img src="assets/icons/angular.png" alt="Angular" class="skill-icon"> Angular</div>
+        <div class="skill"><img src="assets/icons/nodejs.png" alt="Node.js" class="skill-icon"> Node.js</div>
+        <div class="skill"><img src="assets/icons/symfony.png" alt="Symfony" class="skill-icon"> Symfony</div>
+        <div class="skill"><img src="assets/icons/postgresql.png" alt="PostgreSQL" class="skill-icon"> PostgreSQL</div>
+        <div class="skill"><img src="assets/icons/mysql.png" alt="MySQL" class="skill-icon"> MySQL</div>
+        <div class="skill"><img src="assets/icons/powerbi.png" alt="Power BI" class="skill-icon"> Power BI</div>
+        <div class="skill"><img src="assets/icons/docker.png" alt="Docker" class="skill-icon"> Docker</div>
+        <div class="skill"><img src="assets/icons/git.png" alt="Git" class="skill-icon"> Git</div>
+        <div class="skill"><img src="assets/icons/php.png" alt="PHP" class="skill-icon"> PHP</div>
+        <div class="skill"><img src="assets/icons/springboot.png" alt="Spring Boot" class="skill-icon"> Spring Boot</div>
+     
+             <div class="skill"><img src="assets/icons/mongodb.png" alt="Spring Boot" class="skill-icon"> MongoDB</div>
+        <div class="skill"><img src="assets/icons/xd.png" alt="Spring Boot" class="skill-icon"> Adobe XD</div>
+         <div class="skill"><img src="assets/icons/gitlabcicd.png" alt="CI/CD" class="skill-icon"> CI/CD</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section id="projects" class="section projects">
+    <div class="container" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <!-- Project Cards -->
+        <article class="project-card" onclick="openProject(1)">
+          <img src="assets/projects/project1.png" alt="Stock Management System">
+          <div class="project-body">
+            <h3>Stock Management System</h3>
+            <p>Angular, Spring Boot, Keycloak, PostgreSQL: Full-stack SaaS with authentication, payments, invoicing, and DevOps using Docker & GitLab CI/CD.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(2)">
+          <img src="assets/projects/BritishAcademy4.png" alt="British Academy Management System">
+          <div class="project-body">
+            <h3>British Academy Management System</h3>
+            <p>Java Swing, PostgreSQL: Desktop app for scheduling, teachers, students, and payment management.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(3)">
+          <img src="assets/projects/carpooling1.png" alt="Carpooling & Cargo Management System">
+          <div class="project-body">
+            <h3>Carpooling & Cargo Management System</h3>
+            <p>Symfony, MySQL: Platform to manage drivers, shipping companies, and users.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(4)">
+          <img src="assets/projects/library1.png" alt="Library Management System">
+          <div class="project-body">
+            <h3>Library Management System</h3>
+            <p>C#, Excel: Desktop app for book cataloging and lending.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(5)">
+          <img src="assets/projects/gaming3.png" alt="Gaming & Player Management Platform">
+          <div class="project-body">
+            <h3>Gaming & Player Management Platform</h3>
+            <p>Symfony, MySQL: Manages games, players, and related data.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(6)">
+          <img src="assets/projects/lib4.png" alt="Digital Library Platform">
+          <div class="project-body">
+            <h3>Digital Library Platform</h3>
+            <p>Angular, Node.js, MongoDB: Web app for managing books and authors.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(7)">
+          <img src="assets/projects/BeautyClinic1.jpg" alt="Beauty Clinic Website">
+          <div class="project-body">
+            <h3>Beauty Clinic Website</h3>
+            <p>HTML, CSS, JavaScript, PHP: Service showcase and clinic information.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(8)">
+          <img src="assets/projects/vol1.png" alt="Flight Management System">
+          <div class="project-body">
+            <h3>Flight Management System</h3>
+            <p>Java Swing, MySQL: Flight schedules and booking management.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(9)">
+          <img src="assets/projects/E-commerce1.png" alt="E-commerce Website">
+          <div class="project-body">
+            
+            <h3>E-commerce Website</h3>
+            <p>WordPress, WooCommerce: Full-featured online store for selling electronic accessories.</p>
+          </div>
+        </article>
+        <article class="project-card" onclick="openProject(10)">
+          <img src="assets/projects/dashboard.png" alt="E-commerce Website">
+          <div class="project-body">
+            <h3>Data Analytics Dashboard</h3>
+            <p>Power BI, Apache Superset, Angular: Unified platform for visualizing and analyzing data.</p>
+          </div>
+        </article>
+      </div>
+          </div>
+
+  </section>
+
+   <!-- ======= Modal ======= -->
+  <div class="modal" id="projectModal">
+    <div class="modal-wrap">
+      <div class="modal-inner">
+        <button class="modal-close" onclick="closeProject()">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <div id="modalTechContainer" class="tech-icons"></div>
+
+        <p id="modalTech"></p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="modalImages"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= RESUME ======= -->
+  <section id="resume" class="section resume">
+    <div class="container" data-aos="fade-up">
+      <h2>Resume</h2>
+      <div class="resume-wrap">
+        <!-- Download Button -->
+        <a href="assets/resume/resume.pdf" download="Alla_Algetaa_Resume.pdf" class="btn">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+
+        <!-- Embedded PDF Viewer -->
+        <div class="resume-viewer">
+          <iframe src="assets/resume/resume.pdf" frameborder="0" title="Alla Algetaa Resume"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="contact" class="contact-section">
+  <div class="contact-card">
+    <h2>Contact Me</h2>
+
+<form id="contactForm" onsubmit="submitContactForm(event)">
+  <input type="text" id="senderName" placeholder="Full Name" required>
+  <input type="email" id="senderEmail" placeholder="Email Address" required>
+  <input type="text" id="mailSubject" placeholder="Subject" required>
+  <textarea id="mailMessage" placeholder="Your Message" required></textarea>
+
+  <button class="contact-btn" type="submit">Send Message</button>
+</form>
+
+
+
+
+    <div class="contact-extra">
+      <div class="contact-item">
+        <div class="icon-circle">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div>
+          <p class="label">Email</p>
+          <p class="value"><a href="mailto:alla.algettaa@gmail.com">alla.algettaa@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="icon-circle">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+          <p class="label">Phone</p>
+          <p class="value">+218928407412</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="toast" class="toast"></div>
+
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alla Mohammed Algetaa</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script> AOS.init({ once: true }); </script>
+</body>
+</html>
